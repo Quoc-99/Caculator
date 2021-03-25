@@ -1,0 +1,104 @@
+.caculator {
+    width: 500px;
+    min-height: fit-content;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 1px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+    height: 6rem;
+    border: 1px solid #ddd;
+    margin: 20px;
+    text-align: right;
+    font-size: 2.8rem;
+    overflow-x: auto;
+    padding-top: 20px;
+    padding-right: 20px;
+    border-radius: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+.input:hover {
+    border: 1px solid #bbb;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    padding: 0 20px;
+}
+
+.operator {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons .operator div {
+    width: 104px;
+    padding: 20px;
+    border: 1px solid #bbb;
+    text-align: center;
+    font-size: 2.6rem;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #ddd;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttons .operator div:hover {
+    border: 1px solid #aaa;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+} 
+
+.leftPanel {
+    display: inline-block;
+    margin: 10px;
+}
+
+.number div {
+    display: inline-block;
+    width: 104px;
+    border: 1px solid #bbb;
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 20px;
+    margin: 10px 1px 0px 10px;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.number div:hover {
+    border: 1px solid #aaa;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.equal {
+    display: inline-block;
+    width: 104px;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    text-align: center;
+    background-color: #4d90fe;
+    color: var(--white-color);
+    font-size: 2.6rem;
+    padding: 122px 20px;
+    vertical-align: top;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.equal:hover {
+    background-color: #307CF9;
+    border-color: #1857BB;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
